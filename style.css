@@ -90,7 +90,7 @@ div{
 }
 
 .income, .expense{
-    height: 270px;
+    height: 275px;
     overflow: auto;
 }
 
@@ -108,7 +108,7 @@ div{
 } 
 
 .income > div, .expense > div{
-    border-bottom: dotted 0.5px;
+    border-bottom: dotted 1px black;
     padding: 0 1rem;
     display: grid;
     grid-template-columns: 2fr 0.25fr;
