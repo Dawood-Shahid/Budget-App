@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <section class="main">
+        <section>
+            <div class="top">
+                <h1>Date Month Year</h1>
+                <h2>Remaining Budget</h2>
+                <h2 id="currentAmmount">0000</h2>
+                <div class="incomeCurrentAmmount">
+                    <h3>Income</h3>
+                    <h3 class="incomeAmmount">0.00</h3>
+                </div>
+                <div class="expenseCurrentAmmount">
+                    <h3>Expense</h3>
+                    <h3 class="expenseAmmount">0.00</h3>
+                </div>
+            </div>
+        </section>
+        <section class="bottom">
+            <div class="bottomBody">
+                <form action="">
+                    <select name="type" id="type">
+                        <option value="income">+</option>
+                        <option value="expense">-</option>
+                    </select>
+                    <input type="text" id="description" placeholder="Add description">
+                    <input type="number" id="ammount" placeholder="Ammount">
+                    <button>Add</button>
+                </form>
+                <div class="tableContainer">
+                    <h3>Income</h3>
+                    <div class="income">
+                        <div>
+                            <div class="tableContent">
+                                <p>description</p>
+                                <p>ammount</p>
+                            </div>
+                            <div id="remove">
+                                <button class="btn">delete</button>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="tableContent">
+                                <p>description</p>
+                                <p>ammount</p>
+                            </div>
+                            <div id="remove">
+                                <button class="btn">delete</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h3>Expense</h3>
+                    <div class="expense">
+                        <div>
+                            <div class="tableContent">
+                                <p>description</p>
+                                <p>ammount</p>
+                            </div>
+                            <div id="remove">
+                                <button class="btn">delete</button>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="tableContent">
+                                <p>description</p>
+                                <p>ammount</p>
+                            </div>
+                            <div id="remove">
+                                <button class="btn">delete</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+</body>
+</html>
