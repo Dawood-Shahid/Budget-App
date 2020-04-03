@@ -55,12 +55,12 @@ div{
     justify-content: space-between;
 }
 
-.bottomBody{
-    background-color: white;
-    border: black 1px solid;
-    max-width: 1400px;
-    margin: 0 auto;
-}
+    .bottomBody{
+        background-color: white;
+        border: black 1px solid;
+        max-width: 1400px;
+        margin: 0 auto;
+    }
 
 .bottomBody > form{
     margin: 0 auto;
