@@ -14,6 +14,9 @@ var budgetHandler = (function () {
         if (totalIncome > 0) {
             this.percentage = Math.round((this.ammount / totalIncome) * 100)
         }
+        else {
+            this.percentage = '---';
+        }
     };
 
     Expense.prototype.getPercentage = function () {
@@ -233,7 +236,7 @@ var UIHandler = (function () {
             document.getElementById(DOMstrings.totalAmmountLabel).textContent = formatNumber(obj.budget, type);
             document.querySelector(DOMstrings.incomeAmmountLabel).textContent = formatNumber(obj.income, 'incone');
             document.querySelector(DOMstrings.expenseAmmountLabel).textContent = formatNumber(obj.expense, 'expense');
-            if (obj.percentage > 0) {
+            if (obj.percentage > 0 && obj.income > 0) {
                 document.querySelector(DOMstrings.percentageLabel).textContent = obj.percentage + ' %';
             }
             else {
