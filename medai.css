@@ -51,14 +51,14 @@
         margin: 2rem 0.5rem;
     }
 
-    .bottomBody > form{
+    .bottomBody > section{
         margin: 0 8px;
         width: auto;
         display: grid;
         grid-template-columns: 0.25fr 1fr 0.75fr 0.5fr;
     }
 
-    .bottomBody > form > *{
+    .bottomBody > section > *{
         margin: 0 2px;
         padding: 0 3px;
     }
@@ -115,7 +115,7 @@
         margin-bottom: 3px;
     }
 
-    .bottomBody > form{
+    .bottomBody > section{
         padding-top: 1rem; 
         width: auto; 
         display: grid;
@@ -128,7 +128,7 @@
         padding: 2px 0.5rem;
     }
 
-    .bottomBody > form > *{
+    .bottomBody > section > *{
         height: 1.75rem;
     }
 

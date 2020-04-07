@@ -55,14 +55,14 @@ div{
     justify-content: space-between;
 }
 
-    .bottomBody{
-        background-color: white;
-        border: black 1px solid;
-        max-width: 1400px;
-        margin: 0 auto;
-    }
+ .bottomBody{
+    background-color: white;
+    border: black 1px solid;
+    max-width: 1400px;
+    margin: 0 auto;
+}
 
-.bottomBody > form{
+.bottomBody > section{
     margin: 0 auto;
     padding-top: 1rem;
     max-width: 800px;
@@ -72,7 +72,7 @@ div{
     justify-content: space-between;
 }
 
-.bottomBody > form > *{
+.bottomBody > section > *{
     height: 2rem;
     margin: 0 0.25rem;
     padding: 0 5px;
@@ -114,13 +114,25 @@ div{
     grid-template-columns: 2fr 0.25fr;
 }
 
+span{
+    display: flex;
+    font-size: 13px;
+    justify-content: center;
+    align-items: center;
+}
+
+.perc, .expPerc{
+    width: 50px;
+    padding-left: 1rem;
+}
+
 .tableContent{
     padding: 0.25rem 0.5rem;
     display: flex;
     justify-content: space-between;
 }
 
-#remove{
+.remove{
     padding: 0.25rem 0.5rem;
     justify-content: center;
     text-align: center;
@@ -133,8 +145,8 @@ div{
     border-radius: 50%;
 }
 
-.tableContainer > .expense > div:hover #remove,
-.tableContainer > .income > div:hover #remove {
+.tableContainer > .expense > div:hover .remove,
+.tableContainer > .income > div:hover .remove {
     visibility: visible;
 }
 
